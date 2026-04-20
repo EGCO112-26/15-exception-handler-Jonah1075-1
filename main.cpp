@@ -53,18 +53,8 @@ int main() {
             a = 0;
 
         }
-        catch (bad_alloc &e) {
-            cout << "std::bad_alloc" << endl;
-            a = 0;
-        }
-
-
         catch (exception &e) {
             cout << e.what() << endl;
-        }
-
-        catch (const char* msg) {
-            cout << msg << endl;
         }
 
     } while (a);
